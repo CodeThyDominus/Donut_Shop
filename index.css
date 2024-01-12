@@ -1,0 +1,69 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Salsa', cursive;
+    font-size: 25px;
+}
+
+header{
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav-bar ul li{
+    display: inline-block;
+    padding: 8px;
+}
+
+.nav-bar{
+    text-align: right;
+    margin-right: 20px;
+    background-color: aliceblue;
+    width: 100%;
+
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-bar ul li a:hover{
+    text-decoration: underline;
+}
+
+.shop-container{
+    border: 2px solid red;
+    height: 90%;
+    width: 85%;
+    margin: auto auto;
+    background-image: url(images/donut_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.shop-name{
+    font-size: 50px;
+    margin-top: 170px;
+    margin-left: 100px;
+}
+
+.tag-line{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.section-title{
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+}
+
+.about-section{
+    height: 100vh;
+    width: 100vw;
+}
+
