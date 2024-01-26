@@ -9,6 +9,7 @@
 header{
     height: 100vh;
     width: 100vw;
+    background-color: aliceblue;
 }
 
 .nav-bar ul li{
@@ -51,6 +52,7 @@ header{
     font-size: 50px;
     margin-top: 170px;
     margin-left: 100px;
+    background-color: none;
 }
 
 .tag-line{
@@ -98,7 +100,8 @@ p{
 
 .right-box{
     width: 45%;
-    margin-left: 6%;
+    height: max-content;
+    margin: auto;
     margin-top: 50px;
 }
 
@@ -107,34 +110,10 @@ p{
     flex-direction: row;
 }
 
-.top-row-1, .top-row-2{
-    width: 50%;
-    height: 350px;
-    background-size: cover;
-    background-position: center;
-}
-
-.top-row-1{
-    background-image: url(images/donut1.jpg);
-}
-
-.top-row-2{
-    background-image: url(images/donut2.jpg);
-}
-
-.bottom-row-1, .bottom-row-2{
-    width: 50%;
+.top-row img, .bottom-row img{
+    aspect-ratio: 1/1;
     height: 300px;
-    background-size: cover;
-    background-position: center;
-}
-
-.bottom-row-1{
-    background-image: url(images/donut3.jpg);
-}
-
-.bottom-row-2{
-    background-image: url(images/donut4.jpg);
+    width: 300px;
 }
 
 .image{
@@ -160,55 +139,37 @@ p{
     flex-direction: row;
     width: 85%;
     margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .donut-row-1, .donut-row-2{
     margin-top: 1%;
 }
 
-.donut-1, .donut-2, .donut-3, .donut-4, .donut-5,.donut-6{
-    width: 50%;
-    height: 320px;
-    background-size: cover;
-    background-position: center;
+.donut-row-1 img, .donut-row-2 img{
+    aspect-ratio: 1/1;
+    width: max-content;
+    height: 300px;
 }
 
-.donut-1{
-    background-image: url(images/types/d1.jpg);
-}
-
-.donut-2{
-    background-image: url(images/types/d2.jpg);
-}
-
-.donut-3{
-    background-image: url(images/types/d3.jpg);
-}
-
-.donut-4{
-    background-image: url(images/types/d4.jpg);
-}
-
-.donut-5{
-    background-image: url(images/types/d5.jpg);
-}
-
-.donut-6{
-    background-image: url(images/types/d6.jpg);
+.donut-2, .donut-5{
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .store-container{
     display: flex;
     flex-direction: row;
     width: 85%;
-    height: 240px;
+    height: max-content;
     margin: auto;
 }
 
 .store-1, .store-2, .store-3{
-    margin: 25px;
+    margin: auto;
     width: 45%;
-    height: 250px;
+    height: max-content;
     color: red;
     text-align: center;
     padding: 20px 20px 20px 20px;
@@ -260,7 +221,57 @@ p{
     font-size: 20px;
 }
 
+@media screen and (max-width: 800px){
+    
+    *{
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Salsa', cursive;
+        font-size: 20px;
+    }
 
+    .about-section{
+        height: max-content;
+        width: 100vw;
+    }
 
+    .about-container{
+        flex-direction: column;
+        height: max-content;
 
+    }
 
+    .left-box{
+        width: 100%;
+        height: max-content;
+        text-align: justify;
+        font-weight: bold;
+        margin: 1rem;
+    }
+
+    .right-box{
+        width: 100%;
+        height: max-content;
+    }
+
+    .top-row, .bottom-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .donuts-section{
+        height: max-content;
+    }
+
+    .donut-row-1, .donut-row-2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .store-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
