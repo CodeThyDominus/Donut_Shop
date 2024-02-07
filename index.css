@@ -1,290 +1,297 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Salsa", cursive;
+  font-size: 25px;
+}
 
-*{
+header {
+  height: 100vh;
+  width: 100vw;
+  background-color: aliceblue;
+}
+
+.nav-bar ul li {
+  display: inline-block;
+  padding: 8px;
+}
+
+.nav-bar {
+  text-align: right;
+  margin-right: 20px;
+  background-color: aliceblue;
+  width: 100%;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.nav-bar ul li a:hover {
+  text-decoration: underline;
+}
+
+.shop-container {
+  border: 2px solid red;
+  height: 90%;
+  width: 85%;
+  margin: auto auto;
+  background-image: url(images/donut_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  opacity: 0.899;
+}
+
+.shop-name {
+  font-size: 50px;
+  margin-top: 170px;
+  margin-left: 100px;
+  background-color: none;
+}
+
+.tag-line {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 35px;
+  font-weight: bold;
+  color: chocolate;
+}
+
+.about-section {
+  height: 100vh;
+  width: 100vw;
+}
+
+.about-container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-box {
+  width: 45%;
+  height: 200px;
+  text-align: justify;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 25px;
+  color: maroon;
+}
+
+.about-p1 {
+  margin-top: 50px;
+}
+
+.right-box {
+  width: 45%;
+  height: max-content;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.top-row,
+.bottom-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-row img,
+.bottom-row img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+}
+
+.image {
+  transition: 0.4s;
+  margin: 1rem;
+  border-radius: 10px;
+  opacity: 0.899;
+}
+
+.image:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  opacity: 1;
+}
+
+.donuts-section {
+  height: max-content;
+  width: 100vw;
+}
+
+.donut-row-1,
+.donut-row-2 {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.donut-row-1,
+.donut-row-2 {
+  margin-top: 1%;
+}
+
+.donut-row-1 img,
+.donut-row-2 img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: max-content;
+  height: 300px;
+}
+
+.donut-2,
+.donut-5 {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.store-container {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  height: max-content;
+  margin: auto;
+}
+
+.store-1,
+.store-2,
+.store-3 {
+  margin: auto;
+  width: 45%;
+  height: max-content;
+  color: red;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+}
+
+.store-1-name {
+  font-size: 30px;
+}
+
+.contact-section {
+  width: 100vw;
+  height: 50vh;
+  background-color: rgb(207, 19, 107);
+}
+
+.contact-section-title {
+  color: #ffffdd;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 35px;
+  font-weight: bold;
+  padding-top: 25px;
+}
+
+.email {
+  color: #ffffdd;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  color: #ffffdd;
+}
+
+.facebook,
+.twitter {
+  margin-left: 20px;
+}
+
+.copyright-info {
+  margin-top: 10px;
+  color: #ffffdd;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  * {
     padding: 0px;
     margin: 0px;
-    font-family: 'Salsa', cursive;
-    font-size: 25px;
-}
+    font-family: "Salsa", cursive;
+    font-size: 20px;
+  }
 
-header{
-    height: 100vh;
+  .about-section {
+    height: max-content;
     width: 100vw;
-    background-color: aliceblue;
-}
+  }
 
-.nav-bar ul li{
-    display: inline-block;
-    padding: 8px;
-}
+  .about-container {
+    flex-direction: column;
+    height: max-content;
+  }
 
-.nav-bar{
-    text-align: right;
-    margin-right: 20px;
-    background-color: aliceblue;
+  .left-box {
     width: 100%;
-
-}
-
-.nav-bar ul li a{
-    text-decoration: none;
-    letter-spacing: 1px;
-}
-
-.nav-bar ul li a:hover{
-    text-decoration: underline;
-}
-
-.shop-container{
-    border: 2px solid red;
-    height: 90%;
-    width: 85%;
-    margin: auto auto;
-    background-image: url(images/donut_bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    opacity: 0.899;
-}
-
-
-.shop-name{
-    font-size: 50px;
-    margin-top: 170px;
-    margin-left: 100px;
-    background-color: none;
-}
-
-.tag-line{
-    font-size: 25px;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.section-title{
-    text-transform: uppercase;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 35px;
-    font-weight: bold;
-    color: chocolate;
-}
-
-.about-section{
-    height: 100vh;
-    width: 100vw;
-}
-
-.about-container{
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-}
-
-.left-box{
-    width: 45%;
-    height: 200px;
+    height: max-content;
     text-align: justify;
     font-weight: bold;
-}
-
-p{
-    margin-top: 25px;
-    color:maroon;
-}
-
-.about-p1{
-    margin-top: 50px;
-}
-
-.right-box{
-    width: 45%;
-    height: max-content;
-    margin: auto;
-    margin-top: 50px;
-}
-
-.top-row, .bottom-row{
-    display: flex;
-    flex-direction: row;
-}
-
-.top-row img, .bottom-row img{
-    aspect-ratio: 1/1;
-    height: 300px;
-    width: 300px;
-}
-
-.image{
-    transition: .4s;
     margin: 1rem;
-    border-radius: 10px;
-    opacity: 0.899;
-}
+  }
 
-.image:hover{
-    transform: scale(1.03);
-    cursor: pointer;
-    opacity: 1;
-}
+  .right-box {
+    width: 100%;
+    height: max-content;
+  }
 
-.donuts-section{
-        height: max-content;
-        width: 100vw;
-}
-
-.donut-row-1, .donut-row-2{
+  .top-row,
+  .bottom-row {
     display: flex;
-    flex-direction: row;
-    width: 85%;
-    margin: auto;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-}
+  }
 
-.donut-row-1, .donut-row-2{
-    margin-top: 1%;
-}
-
-.donut-row-1 img, .donut-row-2 img{
-    aspect-ratio: 1/1;
-    width: max-content;
-    height: 300px;
-}
-
-.donut-2, .donut-5{
-    margin-left: 150px;
-    margin-right: 150px;
-}
-
-.store-container{
-    display: flex;
-    flex-direction: row;
-    width: 85%;
+  .donuts-section {
     height: max-content;
-    margin: auto;
-}
+  }
 
-.store-1, .store-2, .store-3{
-    margin: auto;
-    width: 45%;
-    height: max-content;
-    color: red;
-    text-align: center;
-    padding: 20px 20px 20px 20px;
-}
-
-.store-1-name{
-    font-size: 30px;
-}
-
-.contact-section{
-    width: 100vw;
-    height: 50vh;
-    background-color: rgb(207, 19, 107);
-}   
-
-.contact-section-title{
-    color: #FFFFDD;
-    text-transform: uppercase;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 35px;
-    font-weight: bold;
-    padding-top: 25px;
-}
-
-.email{
-    color: #FFFFDD;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.social-media{
+  .donut-row-1,
+  .donut-row-2 {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 10px;
-    color: #FFFFDD;
+    flex-direction: column;
+  }
+
+  .store-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-.facebook, .twitter{
-    margin-left: 20px;
-}
-
-.copyright-info{
-    margin-top: 10px;
-    color: #FFFFDD;
-    text-align: center;
+@media (min-width: 1001px) and (max-width: 1700px) {
+  * {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Salsa", cursive;
     font-size: 20px;
-}
+  }
 
-@media screen and (max-width: 1000px){
-    
-    *{
-        padding: 0px;
-        margin: 0px;
-        font-family: 'Salsa', cursive;
-        font-size: 20px;
-    }
-
-    .about-section{
-        height: max-content;
-        width: 100vw;
-    }
-
-    .about-container{
-        flex-direction: column;
-        height: max-content;
-
-    }
-
-    .left-box{
-        width: 100%;
-        height: max-content;
-        text-align: justify;
-        font-weight: bold;
-        margin: 1rem;
-    }
-
-    .right-box{
-        width: 100%;
-        height: max-content;
-    }
-
-    .top-row, .bottom-row{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .donuts-section{
-        height: max-content;
-    }
-
-    .donut-row-1, .donut-row-2{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .store-container{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 1001px) and (max-width: 1700px){
-
-    *{
-        padding: 0px;
-        margin: 0px;
-        font-family: 'Salsa', cursive;
-        font-size: 20px;
-    }
-
-    .donuts-section{
-        height: max-content;
-    }
+  .donuts-section {
+    height: max-content;
+  }
 }
